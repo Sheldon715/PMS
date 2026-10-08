@@ -1,0 +1,15 @@
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\bin\Debug\net10.0\PMS.exe
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\bin\Debug\net10.0\PMS.deps.json
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\bin\Debug\net10.0\PMS.runtimeconfig.json
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\bin\Debug\net10.0\PMS.dll
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\bin\Debug\net10.0\PMS.pdb
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.AssemblyInfoInputs.cache
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.AssemblyInfo.cs
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.csproj.CoreCompileInputs.cache
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.sourcelink.json
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.dll
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\refint\PMS.dll
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.pdb
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\PMS.genruntimeconfig.cache
+C:\Users\lxd04\Desktop\WEB\dc_code\project\PMS\obj\Debug\net10.0\ref\PMS.dll
