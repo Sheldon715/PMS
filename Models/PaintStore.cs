@@ -5,11 +5,10 @@ namespace PMS.Models;
 
 public class PaintStore
 {
-    PaintProduct[] paintStore = new PaintProduct[10];
-    int count = 0;
+    public List<PaintProduct> paintStore { get; private set; }= new List<PaintProduct>();
+
     public void AddProduct(PaintProduct paintProduct)
     {
-        paintStore[count] = paintProduct;
-        count++;
+        paintStore.Add(paintProduct);
     }
 }
