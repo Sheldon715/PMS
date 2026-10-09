@@ -36,7 +36,7 @@ public class PaintProduct : IBuyable
         System.Console.WriteLine($"Name: {Name}, Type: {Type}, Specification: {Specification}, Price: {Price}");
     }
 
-    public void GetMaxDiscount(int rate, bool isOverridable)
+    public static void GetMaxDiscount(int rate, bool isOverridable)
     {
         decimal maxDiscount;
         if (isOverridable)

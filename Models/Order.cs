@@ -5,16 +5,18 @@ namespace PMS.Models;
 public class Order
 {
     public readonly DateTime CreatedAt;
-    public int Quantity { get; set; }
-    decimal TotalPrice { get; set; }
+    public int Quantity { get; private set; }
+    public decimal TotalPrice { get; private set; }
+    public List<PaintProduct> PaintProducts { get; private set; }
 
-    public Order(PaintProduct[] paintProduct, int[] quantity)
+    public Order(List<PaintProduct> paintProducts, int[] quantity)
     {
         CreatedAt = DateTime.Now;
+        PaintProducts = paintProducts;
 
-        for (int i = 0; i < paintProduct.Length; i++)
+        for (int i = 0; i < PaintProducts.Count; i++)
         {
-            TotalPrice += paintProduct[i].Price * quantity[i];
+            TotalPrice += PaintProducts[i].Price * quantity[i];
             Quantity += quantity[i];
         }
     }
@@ -27,5 +29,29 @@ public class Order
     public void GetTotalPrice()
     {
         System.Console.WriteLine($"Total price is ${TotalPrice}");
+    }
+
+    public PaintProduct GetMostExpensivePaintProduct()
+    {
+        return PaintProducts.OrderByDescending(p => p.Price)
+        .First();
+    }
+
+    public void RemoveProduct(int productId)
+    {
+        PaintProducts.RemoveAt(productId);
+    }
+
+    public IEnumerable<PaintProduct> SpecificRangeProduct(decimal X, decimal Y)
+    {
+        return PaintProducts.Where(p => p.Price > X && p.Price < Y);
+
+    }
+
+    public IEnumerable<decimal> AllProductPrice()
+    {
+        return PaintProducts
+        .GroupBy(p => p.Type)
+        .Select(group => group.Sum(p => p.Price));
     }
 }
